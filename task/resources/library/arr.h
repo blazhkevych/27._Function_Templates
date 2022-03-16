@@ -73,7 +73,7 @@ void ConvDecToAnotherNumSys(int number, int numSys);
 // Функция перевода числа, записанного в двоичном виде, в десятичное представление.
 int ConvBinToDecSys(long long number);
 
-// Функция поиска среднего арифметического значений двумерного массива.
+// Шаблон функции поиска среднего арифметического значений двумерного массива.
 template <typename T>
 inline double AvgInArray(T arr[][4], int row)
 {
