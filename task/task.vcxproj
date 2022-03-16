@@ -139,7 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="resources\library\arr.cpp" />
+    <ClCompile Include="resources\library\mathlib.cpp" />
     <ClCompile Include="task.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\27. Шаблоны функций.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resources\library\arr.h" />
+    <ClInclude Include="resources\library\mathlib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

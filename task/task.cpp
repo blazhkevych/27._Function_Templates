@@ -1,20 +1,72 @@
-// task.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+﻿// НЕ РАБОТАЕТ
 #include <iostream>
+#include "resources/library/arr.h"
+using namespace std;
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	char answer{ 0 };
+	int choice{ 0 };
+
+	do
+	{
+		cout << "Enter task number:: "
+			<< "\nTask 1."
+			<< "\nTask 2."
+			<< endl;
+		cin >> choice;
+
+		switch (choice)
+		{
+		case 1:
+		{
+			/*
+			1. Написать шаблон функции для поиска среднего арифметического значений массива.
+			*/
+			srand(time(0));
+			const int row = 4;
+			const int col = 4;
+
+			int arrInt[row][col]{ 0 };
+			cout << "Int:\n\n";
+			InitArrayRandom(arrInt, col, 1, 99);
+			PrintArray(arrInt, row);
+			cout << "\nAvg : " << AvgInArray(arrInt, row) << endl;
+
+			double arrDouble[row][col]{ 0.0 };
+			cout << "\nDouble:\n\n";
+			InitArrayRandom(arrDouble, col, 1, 99);
+			PrintArray(arrDouble, row);
+			cout << "\nAvg : " << AvgInArray(arrDouble, row) << endl;
+
+			char arrChar[row][col]{ 0 };
+			cout << "\nChar:\n\n";
+			InitArrayRandom(arrChar, col, 1, 99);
+			PrintArray(arrChar, row);
+			cout << "\nAvg : " << AvgInArray(arrChar, row) << endl;
+		}
+		break;
+
+		case 2:
+		{
+			/*
+			2. Написать перегруженные шаблоны функций для нахождения
+			корней линейного (a*x + b = 0) и квадратного (a*x2+b*x + c = 0)
+			уравнений. При этом в функции передаются коэффициенты
+			уравнений.
+			*/
+
+		}
+		break;
+		}
+
+		cout << endl;
+		cout << "Do you want to continue? ( y (yes) / n (no) )\n";
+		cin >> answer;
+		cout << endl;
+
+	} while (answer == 'y');
+
+	return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
