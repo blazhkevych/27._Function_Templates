@@ -1,4 +1,4 @@
-﻿// НЕ РАБОТАЕТ
+﻿// ДОДЕЛАТЬ 2 ЗАДАНИЕ
 #include <iostream>
 #include "resources/library/arr.h"
 using namespace std;
