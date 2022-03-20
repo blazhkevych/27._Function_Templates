@@ -1,6 +1,7 @@
 ﻿// ДОДЕЛАТЬ 2 ЗАДАНИЕ
 #include <iostream>
 #include "resources/library/arr.h"
+#include "resources/library/mathlib.h"
 using namespace std;
 
 
@@ -56,6 +57,17 @@ int main()
 			уравнений. При этом в функции передаются коэффициенты
 			уравнений.
 			*/
+
+			double a{ 0 }, b{ 0 }; // Коэфициенты уравнения.
+			cout <<"Given a linear equation:\n"
+				<< "a * x + b = 0\n"
+				<<"Find x.\n"
+				<< "Enter the coefficient of the linear equation \"a\" : ";
+			cin >> a;
+			cout << "\nEnter the coefficient of the linear equation \"b\" : ";
+			cin >> b;
+			RootsOfLinearEquation(a, b);
+			cout << endl;
 
 		}
 		break;
